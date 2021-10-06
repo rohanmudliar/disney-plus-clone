@@ -2,12 +2,14 @@ import ImgSlider from "./ImgSlider";
 
 import styled from "styled-components";
 import Viewers from "./Viewers";
+import Movies from "./Movies";
 
 function Home() {
   return (
     <Container>
       <ImgSlider />
       <Viewers />
+      <Movies />
     </Container>
   );
 }
