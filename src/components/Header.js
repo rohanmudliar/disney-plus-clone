@@ -1,37 +1,42 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Header() {
   return (
     <Nav>
-      <Logo src="/images/logo.svg" />
+      <Link to="/">
+        <Logo src="/images/logo.svg" />
+      </Link>
       <NavMenu>
-        <a>
-          <img src="/images/home-icon.svg" />
+        <Link to="/">
+          <img src="/images/home-icon.svg" alt="home" />
           <span>Home</span>
-        </a>
-        <a>
-          <img src="/images/search-icon.svg" />
+        </Link>
+        <Link to="#">
+          <img src="/images/search-icon.svg" alt="search" />
           <span>Search</span>
-        </a>
-        <a>
-          <img src="/images/watchlist-icon.svg" />
-          <span>Watch</span>
-        </a>
-        <a>
-          <img src="/images/original-icon.svg" />
+        </Link>
+        <Link to="/detail">
+          <img src="/images/watchlist-icon.svg" alt="detail" />
+          <span>Detail</span>
+        </Link>
+        <Link to="#">
+          <img src="/images/original-icon.svg" alt="originals" />
           <span>original</span>
-        </a>
-        <a>
-          <img src="/images/movie-icon.svg" />
+        </Link>
+        <Link to="#">
+          <img src="/images/movie-icon.svg" alt="movie" />
           <span>Movies</span>
-        </a>
-        <a>
-          <img src="/images/series-icon.svg" />
+        </Link>
+        <Link to="#">
+          <img src="/images/series-icon.svg" alt="series" />
           <span>Series</span>
-        </a>
+        </Link>
       </NavMenu>
 
-      <UserImg src="https://avatars.githubusercontent.com/u/44732632?v=4" />
+      <Link to="/login">
+      < UserImg src="https://avatars.githubusercontent.com/u/44732632?v=4" />
+      </Link>
     </Nav>
   );
 }
@@ -61,6 +66,12 @@ const NavMenu = styled.div`
     align-items: center;
     padding: 0 12px;
     cursor: pointer;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    text-decoration: none;
+    gap: 6px;
+    align-items: center;
 
     img {
       height: 20px;

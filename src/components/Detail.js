@@ -4,26 +4,26 @@ function Detail() {
   return (
     <Container>
       <Background>
-        <img src="/images/FvF.jpg" />
+        <img src="/images/FvF.jpg" alt="background" />
       </Background>
       <ImageTitle>
-        <img src="/images/FvFTitle.png" />
+        <img src="/images/FvFTitle.png" alt="Title" />
       </ImageTitle>
 
       <Controls>
         <PlayButton>
-          <img src="/images/play-icon-black.png" />
+          <img src="/images/play-icon-black.png" alt="planBlackBtn" />
           <span>Play</span>
         </PlayButton>
         <TrailerButton>
-          <img src="/images/play-icon-white.png" />
+          <img src="/images/play-icon-white.png" alt="playBtn" />
           <span>Trailer</span>
         </TrailerButton>
         <AddButton>
           <span>+</span>
         </AddButton>
         <GroupWatchButton>
-          <img src="/images/group-icon.png" />
+          <img src="/images/group-icon.png"  alt="groupBtn"/>
         </GroupWatchButton>
       </Controls>
       <SubTitle>2h 32min . 2019. Biopic. U/A 16+</SubTitle>
